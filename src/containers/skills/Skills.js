@@ -21,7 +21,7 @@ export default function Skills() {
               <DisplayLottie animationData={codingPerson} />
             ) : (
               <img
-                alt="Man Working"
+                alt="Woman Working"
                 src={require("../../assets/images/developerActivity.svg")}
               ></img>
             )}
@@ -43,7 +43,7 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
+            
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
@@ -60,6 +60,11 @@ export default function Skills() {
                 );
               })}
             </div>
+            <div>
+            {/* <SoftwareSkill /> */}
+            </div>
+
+            
           </div>
         </Fade>
       </div>

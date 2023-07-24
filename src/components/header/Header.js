@@ -10,7 +10,8 @@ import {
   openSource,
   blogSection,
   talkSection,
-  achievementSection
+  achievementSection,
+  bigProjects
 } from "../../portfolio";
 
 function Header() {
@@ -21,6 +22,7 @@ function Header() {
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
+  // const bigProjects = bigProjects.display;
 
   return (
     <Headroom>
@@ -41,17 +43,29 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">Description</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#tech">Skills</a>
             </li>
           )}
+          
+          
+          {/* {bigProjects && (
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+          )} */}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#experience">Experience</a>
+            </li>
+          )}
+          {viewBlog && (
+            <li>
+              <a href="#projects">Projects</a>
             </li>
           )}
           {viewAchievement && (
@@ -59,18 +73,14 @@ function Header() {
               <a href="#achievements">Achievements</a>
             </li>
           )}
-          {viewBlog && (
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
+          
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#projects">Projects</a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

@@ -40,13 +40,13 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
+                {/* {greeting.resumeLink && (
                   <Button
                     text="See my resume"
                     newTab={true}
                     href={greeting.resumeLink}
                   />
-                )}
+                )} */}
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function Greeting() {
             ) : (
               <img
                 alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+                src={require("../../assets/images/programmer.svg")}
               ></img>
             )}
           </div>
